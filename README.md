@@ -19,22 +19,20 @@ The binary in downloads on GitHub just needs to be dropped into the eclipse /plu
 then allow adding a "Directory Container" library to the Java Build Path.
 
 You can find the latest verion here:
-https://github.com/dpalic/SimpleDirectoryContainer_EclipsePlugin/tree/master/SimpleDirectoryContainer_EclipsePlugin/ExportedPlugin
-
-or directly (but maybe outdated):
-https://github.com/dpalic/SimpleDirectoryContainer_EclipsePlugin/tree/master/SimpleDirectoryContainer_EclipsePlugin/ExportedPlugin/DirectoryClasspathContainer_1.1.3.jar
+https://github.com/dpalic/EclipseFolderClasspath/tree/master/SimpleDirectoryContainer_EclipsePlugin/ExportedPlugin
 
 I created this jar by exporting a "Deployable plug-ins and fragments" from Eclipse at the project level.
 
-###############
-# INSTALLATION
-###############
+## INSTALLATION
 1. Download the latest jar file (see above)
 2. stop your eclipse (ensure it is really stopped in taskmanager)
 3. put the downloaded jar file into your eclipse\plugin folder
 4. restart your eclipse
 5. in Eclipse go to you Java Build Path settings and go to the tab Libraries
 6. "Add Library..." will provide you now a new entry "Directory container"
+
+## How to contribute?
+Please provide a pull request, we well give our best to review your changes and to incorporate it into the repository.
 
 ## History
 It is an evolution of original code I got from here:
@@ -44,6 +42,8 @@ Thus it originates from Aaron Tarter (aarontar@us.ibm.com).
 The primary modification Ben Christensen made (besides renaming things to no longer say 'example') was making it handle
 filenames that had multiple dots (such as com.company.library.name.v2.jar).
 
-The improvements I made (Darko Palic) are to allow multiple directory containers in the classpaths and of course therefore in the eclipse launches.
+After not getting any response on the provided patches, I decided to create a new repository independently of the Ben Christensens changes. Since there are already so much changes, what only some rudimentary parts are original, all other stuff has already been changed.
+
+The improvements I made (Darko Palic) are to allow multiple directory containers in the classpaths and of course therefore in the eclipse launch configurations and any other eclipse runtime/classpath settings.
 The previous version had bigger issues about it.
 
